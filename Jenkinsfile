@@ -9,7 +9,7 @@ pipeline {
         stage('MAVEN BUILD'){
             steps{
                 sh 'mvn clean package -Dmaven.test.skip=true'
-                sh 'mv target/*.jar target/myapp.jar'
+                sh 'mv target/*.jar target/timetracker.jar'
             }
         }
         stage('TEST'){
